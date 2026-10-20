@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#263a3e">
+    <title>:c</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="garden">
+        <div class="moon" aria-hidden="true"></div>
+        <div class="stars" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="hill hill--far" aria-hidden="true"></div>
+        <div class="hill hill--near" aria-hidden="true"></div>
+        <div class="petals" id="petals" aria-hidden="true"></div>
+
+        <section class="scene" aria-label="Apology letter">
+            <h1>Em sorri :c</h1>
+            <p class="subtitle">Whenever you’re ready, you can open the letter c:</p>
+
+            <div class="envelope-wrap" id="envelope-wrap">
+                <article class="letter" id="letter" aria-label="Apology letter" aria-hidden="true" inert>
+                    <button class="close-letter" id="close-letter" type="button" aria-label="Close letter">×</button>
+                    <div class="letter-content">
+                        <p class="letter-date">Buo kong pagtapat</p>
+                        <h2>Aking sinta na iniirog,</h2>
+                        <p>Lubos akong nag mamakaawa dahil ikaw ay nasaktan ko at nabigyan pa ng sagabal at sakuna</p>
+                        <p>Mahalaga ka sakin, at alam na alam ko na din na mahalaga ako sayo ngunit hindi ko kinakaya ang distansya naten ngayon sa isa't isa, kaya muli akoy humihingi ng patawad sa nagawa ko sayo</p>
+                        <p>Ikaw yung pinaka importanteng tao sa akin at takot din akong mawala ka, hindi ako sanay na ganito tayo ngayon kaya nanghihingi ako ngayon ng patawad, at aking isusumpa sa bato</p>
+                        <p>na kahit ano ang mangyare, ikaw paden talaga ang bukod tanging tao na pipiliin ko sa araw araw, magalit man o masaya o kahit lungkot, kahit anong emosyon ang nararamdaman mo sa araw nayon </p>
+                        <p>Pasensya na ulit dahil napa tampo ako nung araw nayon, at hindi ka inintindi pa ng mas maayos, at ang aking ibang mga nasabi ay nadala na sa pag iisip ng sakuna at dismaya kaya gusto ko talagang mas bumuti o mas mahusay sa tabi o tapat mo</p>
+                        <p>At sana ay mapatawad mo ako sa aking mga nagawa at nasabi, at sana ay maging maayos na tayo muli, at sana ay maging masaya ka muli sa tabi ko</p>
+                        <p>Hindi ako perpektong tao pero kaya kong mas maging mabuti o mahusay para sa iyo</p>
+                        <br>
+                        <p>(Grabe pag tagalog ko don ah, huwaw, patawarin mo napo ako please :c)</p>
+                        <p class="signoff">Nag-mamalasakit sa iyo,<br><span>Postcard Sender</span></p>
+                        <img class="letter-gif" src="images/i-cry.gif" alt="Me sad :c">
+                    </div>
+                    <span class="letter-flower" aria-hidden="true">✿</span>
+                </article>
+
+                <div class="envelope" aria-hidden="true">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-pocket"></div>
+                    <div class="envelope-flap"></div>
+                    <div class="seal">✿</div>
+                </div>
+            </div>
+
+            <button class="open-button" id="open-envelope" type="button">
+                <span aria-hidden="true">✉</span>
+            </button>
+
+            <div class="music-player" role="group" aria-label="Background music player">
+                <audio id="background-music" src="audio/background-music.mp3" autoplay loop preload="auto"></audio>
+                <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">Play music</button>
+                <label class="volume-control" for="music-volume">
+                    <span>Volume</span>
+                    <input id="music-volume" type="range" min="0" max="100" value="35">
+                    <output id="music-volume-value" for="music-volume">35%</output>
+                </label>
+                <p class="visually-hidden" id="music-status" role="status" aria-live="polite">Trying to start the music…</p>
+            </div>
+        </section>
+
+        <footer class="footer">I hope this letter finds you well <span aria-hidden="true">♡</span></footer>
+    </main>
+</body>
+</html>
